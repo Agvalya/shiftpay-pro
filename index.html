@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ShiftPay Pro — Shift Planner & Gross Paycheck Checker for Android</title>
+  <meta name="description" content="Plan work shifts, estimate gross pay with overtime and differentials, and compare expected pay with actual gross pay. Offline-first on Android.">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}/">
+  <link rel="icon" href="{{ site.baseurl }}/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@600,700,800&f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/style.css">
+  <meta property="og:type" content="website"><meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="ShiftPay Pro"><meta property="og:title" content="Know what every shift should pay">
+  <meta property="og:description" content="Plan shifts, estimate gross pay, and check whether your paycheck matches.">
+  <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}/"><meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/assets/shiftpay-social.jpg">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="ShiftPay Pro"><meta name="twitter:description" content="Shift planner, gross pay estimator, and paycheck checker for Android."><meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}/assets/shiftpay-social.jpg">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"Organization","@id":"{{ site.url }}{{ site.baseurl }}/#organization",
+        "name":"ShiftPay Pro","url":"{{ site.url }}{{ site.baseurl }}/","logo":"{{ site.url }}{{ site.baseurl }}/assets/favicon.svg",
+        "contactPoint":{"@type":"ContactPoint","email":"{{ site.support_email }}","contactType":"customer support","availableLanguage":"English"}
+      },
+      {
+        "@type":["SoftwareApplication","MobileApplication"],"@id":"{{ site.url }}{{ site.baseurl }}/#app",
+        "name":"ShiftPay Pro","url":"{{ site.url }}{{ site.baseurl }}/","installUrl":"{{ site.play_store_url }}",
+        "downloadUrl":"{{ site.play_store_url }}","operatingSystem":"Android","applicationCategory":"BusinessApplication",
+        "applicationSubCategory":"Shift scheduling and gross pay estimation","softwareVersion":"{{ site.version }}",
+        "description":"An offline-first shift planner, gross pay estimator, and paycheck checker for U.S. nurses and hourly shift workers. Estimates overtime, shift differentials, and bonuses, then compares expected gross pay with actual gross pay.",
+        "featureList":["Shift planning","Gross pay estimates","Overtime estimates","Night and weekend differentials","Paycheck comparison","Completed check history","PDF and CSV export","Offline-first use"],
+        "audience":{"@type":"Audience","audienceType":"U.S. nurses and hourly shift workers"},
+        "offers":{"@type":"Offer","price":"0","priceCurrency":"USD","category":"Free app with optional Pro subscription"},
+        "publisher":{"@id":"{{ site.url }}{{ site.baseurl }}/#organization"},
+        "screenshot":"{{ site.url }}{{ site.baseurl }}/assets/shiftpay-hero.webp"
+      },
+      {
+        "@type":"WebSite","@id":"{{ site.url }}{{ site.baseurl }}/#website","url":"{{ site.url }}{{ site.baseurl }}/","name":"ShiftPay Pro",
+        "publisher":{"@id":"{{ site.url }}{{ site.baseurl }}/#organization"},"inLanguage":"en-US"
+      },
+      {
+        "@type":"FAQPage","mainEntity":[
+          {"@type":"Question","name":"What does ShiftPay Pro calculate?","acceptedAnswer":{"@type":"Answer","text":"ShiftPay Pro estimates gross pay from scheduled or worked shifts, including supported overtime rules, shift differentials, and fixed bonuses."}},
+          {"@type":"Question","name":"Can ShiftPay Pro check a paycheck?","acceptedAnswer":{"@type":"Answer","text":"Yes. Enter actual gross pay to compare it with the app's expected gross estimate and review a possible difference with an explanatory breakdown."}},
+          {"@type":"Question","name":"Does ShiftPay Pro work offline?","acceptedAnswer":{"@type":"Answer","text":"Core planning, estimation, paycheck checking, and history features are designed to work offline without an account or cloud sync."}},
+          {"@type":"Question","name":"Is ShiftPay Pro payroll, tax, legal, or financial advice?","acceptedAnswer":{"@type":"Answer","text":"No. ShiftPay Pro is an estimator and organizational tool. Results should be checked against employer policies and official payroll records."}}
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <nav class="container nav" aria-label="Main navigation">
+    <a class="brand" href="{{ site.baseurl }}/" aria-label="ShiftPay Pro home">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="var(--primary)"/><path d="M18 21h28M18 32h20M18 43h13" stroke="var(--inverse)" stroke-width="6" stroke-linecap="round"/><path d="M43 36v14m-7-7h14" stroke="var(--amber)" stroke-width="5" stroke-linecap="round"/></svg>
+      <span>ShiftPay Pro</span>
+    </a>
+    <ul class="nav-links" data-nav-list>
+      <li><a href="#how-it-works">How it works</a></li><li><a href="#features">Features</a></li><li><a href="{{ site.baseurl }}/shift-pay-guide.html">Shift pay guide</a></li><li><a href="#faq">FAQ</a></li>
+    </ul>
+    <div class="header-actions">
+      <a class="button button-primary button-small nav-cta" href="{{ site.play_store_url }}" target="_blank" rel="noopener noreferrer">Get it on Google Play</a>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch color theme"><span aria-hidden="true">◐</span></button>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-label="Open navigation" aria-expanded="false"><span aria-hidden="true">☰</span></button>
+    </div>
+  </nav>
+</header>
+<main id="main">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="eyebrow">Shift planner + gross pay checker</p>
+        <h1>Know what every shift should pay.</h1>
+        <p class="hero-copy">Plan your schedule, estimate gross pay with overtime and shift differentials, then compare the estimate with your actual gross paycheck.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="{{ site.play_store_url }}" target="_blank" rel="noopener noreferrer">Get ShiftPay Pro on Android</a>
+          <a class="button button-secondary" href="#how-it-works">See how paycheck checking works</a>
+        </div>
+        <ul class="trust-line" role="list"><li>Offline-first</li><li>No account required</li><li>Built for U.S. shift workers</li></ul>
+      </div>
+      <figure class="hero-media">
+        <img src="{{ site.baseurl }}/assets/shiftpay-hero.webp" alt="A fictional ShiftPay Pro gross pay estimate showing hours, overtime, and a night differential" width="1440" height="1080" fetchpriority="high" decoding="async">
+        <figcaption class="caption">Illustrative screen with fictional pay data. ShiftPay Pro estimates gross pay; it is not a payroll system.</figcaption>
+      </figure>
+    </div>
+  </section>
+  <section class="problem-band section-tight" aria-labelledby="difference-heading">
+    <div class="container problem-grid">
+      <blockquote id="difference-heading">A schedule tells you when you worked. ShiftPay Pro helps explain what those shifts may be worth.</blockquote>
+      <div><p>Most shift calendars stop at dates and hours. ShiftPay Pro connects worked time to an expected gross-pay estimate, then lets you compare that estimate with actual gross pay. A difference is flagged as a possible discrepancy—not proof of underpayment.</p></div>
+    </div>
+  </section>
+  <section class="section" id="how-it-works" aria-labelledby="workflow-heading">
+    <div class="container">
+      <p class="eyebrow">From schedule to paycheck review</p><h2 id="workflow-heading">One repeatable pay-period workflow</h2>
+      <div class="workflow">
+        <article class="step"><p class="step-num">01</p><h3>Add an employer</h3><p>Enter the pay rules you want the estimate to use. Your financial details stay on your device.</p></article>
+        <article class="step"><p class="step-num">02</p><h3>Plan or record shifts</h3><p>Use templates for recurring day, night, or standard shifts and mark the shifts you actually worked.</p></article>
+        <article class="step"><p class="step-num">03</p><h3>Review expected gross pay</h3><p>See base pay, supported overtime, eligible differentials, and fixed bonuses in an explainable breakdown.</p></article>
+        <article class="step"><p class="step-num">04</p><h3>Compare with actual gross</h3><p>Enter the gross amount from your pay information and review a close match, higher amount, or possible difference.</p></article>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="features" aria-labelledby="features-heading">
+    <div class="container feature-story">
+      <div><p class="eyebrow">Designed for complex shifts</p><h2 id="features-heading">More than hours × rate</h2><p class="lede" style="margin-top:1rem">ShiftPay Pro is built for schedules where timing, overtime, and premiums can change the estimate.</p></div>
+      <ul class="feature-list" role="list">
+        <li><span class="check">✓</span><div><strong>Overtime estimates</strong><span>Choose no overtime, federal weekly overtime, or a California estimate with supported daily and weekly thresholds.</span></div></li>
+        <li><span class="check">✓</span><div><strong>Night and weekend differentials</strong><span>Model fixed hourly premiums or multipliers across time windows and selected days.</span></div></li>
+        <li><span class="check">✓</span><div><strong>Paycheck comparison</strong><span>Compare expected gross with actual gross and open a plain-language explanation of the possible difference.</span></div></li>
+        <li><span class="check">✓</span><div><strong>Frozen completed checks</strong><span>Keep a stable historical record even if rates or rules change later.</span></div></li>
+        <li><span class="check">✓</span><div><strong>Offline-first privacy</strong><span>No account or cloud is required for core use. Data is stored locally on the device.</span></div></li>
+        <li><span class="check">✓</span><div><strong>Reports and exports</strong><span>Review completed checks and export supported information to PDF or CSV.</span></div></li>
+      </ul>
+    </div>
+  </section>
+  <section class="section-tight" aria-labelledby="audience-heading">
+    <div class="container audience">
+      <div><p class="eyebrow">Who it is for</p><h2 id="audience-heading">Built for hourly work that changes by shift</h2></div>
+      <div class="audience-tags" aria-label="ShiftPay Pro audiences"><span class="tag">Registered nurses</span><span class="tag">LPNs and CNAs</span><span class="tag">EMTs and paramedics</span><span class="tag">Night-shift workers</span><span class="tag">12-hour shift workers</span><span class="tag">Hourly workers with overtime</span></div>
+    </div>
+  </section>
+  <section class="section" aria-labelledby="privacy-heading">
+    <div class="container callout"><div><h2 id="privacy-heading">Pay information should stay private.</h2><p>Core records are kept locally. The app works without an account and does not require cloud storage for the primary workflow.</p></div><a class="button button-secondary" href="{{ site.baseurl }}/privacy.html">Read the privacy overview</a></div>
+  </section>
+  <section class="section" id="faq" aria-labelledby="faq-heading">
+    <div class="container faq"><div><p class="eyebrow">Questions</p><h2 id="faq-heading">Before you install</h2></div>
+      <div class="faq-list">
+        <details><summary>What does ShiftPay Pro calculate?</summary><p>It estimates gross pay from your shifts using the rules and rates you enter, including supported overtime, differentials, and fixed bonuses.</p></details>
+        <details><summary>Can it check whether my paycheck matches?</summary><p>Yes. Compare expected gross pay with actual gross pay and review a possible difference. The result is an estimate, not a determination that an employer underpaid you.</p></details>
+        <details><summary>Does it calculate take-home or net pay?</summary><p>No. ShiftPay Pro focuses on gross pay before taxes and deductions.</p></details>
+        <details><summary>Does it work offline?</summary><p>Core shift planning, estimates, paycheck checks, and history are designed for offline use without an account.</p></details>
+        <details><summary>Is it payroll, legal, tax, or financial advice?</summary><p>No. Use the app as an estimator and organizational tool, and verify results against your employer's rules and official payroll records.</p></details>
+      </div>
+    </div>
+  </section>
+  <section class="section-tight">
+    <div class="narrow" style="text-align:center"><p class="eyebrow">For your next pay period</p><h2>Plan the shifts. Estimate the gross. Check the paycheck.</h2><p class="lede" style="margin:1rem auto 2rem">Start with one employer and your next set of shifts.</p><a class="button button-primary" href="{{ site.play_store_url }}" target="_blank" rel="noopener noreferrer">Get ShiftPay Pro on Google Play</a></div>
+  </section>
+</main>
+<footer class="footer"><div class="container footer-grid"><a class="brand" href="{{ site.baseurl }}/"><span>ShiftPay Pro</span></a><ul class="footer-links"><li><a href="{{ site.baseurl }}/shift-pay-guide.html">Shift pay guide</a></li><li><a href="{{ site.baseurl }}/privacy.html">Privacy</a></li><li><a href="{{ site.baseurl }}/terms.html">Terms</a></li><li><a href="mailto:{{ site.support_email }}">Support</a></li></ul></div><div class="container"><p class="fineprint">© 2026 ShiftPay Pro. Estimates only; not a payroll system and not legal, tax, or financial advice. Verify calculations against employer policies and official records.</p></div></footer>
+<script src="{{ site.baseurl }}/assets/site.js" defer></script>
+</body></html>

@@ -1,0 +1,13 @@
+title: "ShiftPay Pro"
+description: "Plan shifts, estimate gross pay, and compare expected pay with actual gross pay on Android."
+url: "https://YOUR-GITHUB-USERNAME.github.io"
+baseurl: "/YOUR-REPOSITORY-NAME"
+play_store_url: "https://play.google.com/store/apps/details?id=YOUR.PACKAGE.ID"
+support_email: "YOUR-REAL-SUPPORT-EMAIL@example.com"
+lang: "en-US"
+version: "1.0.0"
+plugins: []
+exclude:
+  - README.md
+  - LICENSE
+  - design-test.html
